@@ -102,3 +102,26 @@ nav a:active{
 .Progress{
     color: #00ff00
 }
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+    }
+
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card span {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card span {
+        font-size: 24px;
+    }
+
+    nav a {
+        padding: 8px;
+    }
+}
